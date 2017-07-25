@@ -10,6 +10,7 @@ Stratiform utilizes WiFi Direct in order to create a local ad-hoc network betwee
 <img src="https://github.com/VenkatKS/Stratiform/blob/master/documentation/architecture_docs/stratiform_architecture.png?raw=true" alt="Stratiform Architecture" width="50%" height="50%"/>
 </p>
 
+## Demo
+I opted to evaluate the performance of Stratiform using a matrix multiplication example. A NxM and a MxA matrix, where N, M and A are specified by the user, is multiplied using Stratiform. Our examples all make N = M = A. The time taken for a solution to be found for the matrix multiplication for various sized matrices and for various number of nodes is featured in Table 1. Stratiform shines when the amount of data is large and the network contains a large number of peer nodes. The overhead for transmission only allows Stratiform to be faster than locally processing the data if the matrix is over 100x100. The specified performance rates was taken in a low-traffic area. Latency rates, and thus Stratiform results, might vary depending on where Stratiform is used.
 
-
-
+The demonstration matrix multiply code can be found under /app/src/main/java/com/example/MatrixMultiplication. The remaining code is for the framework.
